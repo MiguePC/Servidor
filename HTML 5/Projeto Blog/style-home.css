@@ -1,0 +1,56 @@
+body {
+    
+}
+
+.principal {
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+.titulo-principal {
+    padding-left: 20px;
+}
+
+#Peru {
+    width: 100%;
+}
+
+.titulo-centralizado {
+    text-align: center;
+}
+
+h2 {
+    background: coral;
+}
+
+p {
+        text-align: center
+}
+
+#objetivo {
+    font-size: 20px;
+}
+
+strong em {
+    color:#FF0000
+}
+
+.itnes {
+    font-style: italic;
+}
+
+.atributos {
+    background: #FFFFFF;
+}
+
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.Montanha {
+    width: 50%;
+}

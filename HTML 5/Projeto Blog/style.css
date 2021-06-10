@@ -1,0 +1,122 @@
+header {
+    background: #000000;
+    padding: 15px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top:65px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+#Earth1 {
+    width: 28%;
+}
+
+nav a {
+    text-transform: uppercase; /* Deixa letras full maiúsculos */
+    color: #FFFFFF;
+    font-weight: bold; /* Deixa letras em negrito */
+    font-size: 22px;
+    text-decoration: none; /* Retira decorações padrões do navegador como cor azul e hiperlik e sublinhado */
+}
+
+nav a:hover { /*  hover - veirifa posicionamento do mouse e aplica configuração*/
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.enquadra {
+    width: 1200px;
+    margin: auto; 
+    padding: 50px;
+}
+
+.enquadra li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    border: 2px solid #000000; /*tamnaho da linhda - tipo - cor*/
+    border-radius: 10px; /*Radio da borda - arredonda cantos*/
+}
+
+.enquadra1 {
+    padding-bottom: 35px;
+}
+
+.IMG-foramt {
+    max-width:75%;
+    max-height:75%;
+    width: 395px;
+    height: 395px;
+    object-fit: cover;
+}
+
+.enquadra li:hover {
+    border-color: #C78C19;
+}
+
+.enquadra li:active { /*Quando mouse clicado (ativo) muda cor*/
+    border-color: #088C19;
+}
+
+.enquadra li:hover h2 { /*Quando mouse em cima muda tamanho título*/
+    font-size: 30px;
+}
+
+.enquadra h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    background: #CCCCCC;
+    padding: 30PX;
+}
