@@ -10,7 +10,7 @@
     <body>
         <header>
             <div class="caixa">
-                <h1><img id="Earth1" src="Earth 1.jpg"></h1>
+                <h1><img id="Earth1" src="Earth 1.jpg" alt="Logo do Blog"></h1>
                     <nav>
                         <ul>
                             <li><a href="index.html">Home</a></li>
@@ -25,34 +25,63 @@
         <main>
             <form>
                 <label for="nomesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome">
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
 
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
                 <label for="mensagem">Mensagem</label>
-                <textarea cosl="70" rows="10" id="mensagem"></textarea> <!--Tag usada para campo de escrita complexa - mais de uma linha-->
+                <textarea cosl="70" rows="10" id="mensagem" class="input-padrao" required></textarea> <!--Tag usada para campo de escrita complexa - mais de uma linha-->
 
-                <div>
-                    <p>Como prefere o nosso contato?</p>
-                    <label for="radio-email">Email</label>
-                    <input type="radio" name="contato" value="email" id="radio-email">
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
 
-                    <label for="radio-telefone">Telefone</label>
-                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
 
-                    <label for="radio-whatsapp">WhatsApp</label>
-                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
-                </div>
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                </fieldset>
 
-                <label><input type="checkbox"> de receber nossas novidades por email?</label>
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select> <!--Estilo caixa de seleções-->
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
 
-                <input type="submit" value="Enviar formulário"> <!--Botão de enviar-->
+                <label class="checkbox"><input type="checkbox"> de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar formulário" class="enviar"> <!--Botão de enviar-->
             </form>
         </main>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20hs</td>
+                </tr>
+            </tbody>
+        </table>
     
         <footer> <!--Rodapé-->
             <p>&copy; Copyright Blog Miguel - 2021</p>
